@@ -43,8 +43,8 @@ const placeOrder = async (req, res) => {
 
         // Create a Stripe checkout session
         const session = await stripe.checkout.sessions.create({
-            success_url: `http://localhost:5173/verify?success=true&orderId=${newOrder._id}`,
-            cancel_url: `http://localhost:5173/verify?success=false&orderId=${newOrder._id}`,
+            success_url: `https://food-frontend-1fs3.onrender.com/verify?success=true&orderId=${newOrder._id}`,
+            cancel_url: `https://food-frontend-1fs3.onrender.com/verify?success=false&orderId=${newOrder._id}`,
             line_items: line_items,
             mode: 'payment', // Payment mode for a one-time payment
         });
