@@ -7,7 +7,7 @@ const foodRoute = require("./routes/foodRoute");
 const userRoute = require("./routes/userRoute");
 const cartRoute = require("./routes/cartRoute");
 const orderRoute = require("./routes/orderRoute");
-const port = 3000;
+const port = process.env.PORT || 3000;
 const foodModel = require("./models/foodModel");
 
 // Middleware
