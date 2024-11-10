@@ -1,0 +1,43 @@
+.card-image-container {
+    position: relative;
+}
+
+.food-item-image {
+    width: 100%;
+    height: auto;
+}
+.food-item{
+    cursor: pointer;
+}
+
+.icon-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.icon-count {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icon-count p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;          /* Set text color to white */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 5px 8px;     /* Add padding to make it more visible */
+    border-radius: 8px;   /* Rounded corners */
+    border: 2px solid #fff; /* White border */
+}
