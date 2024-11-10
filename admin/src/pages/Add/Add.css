@@ -1,0 +1,45 @@
+/* Add.css */
+
+.container {
+    max-width: 60%; /* Set a max width for the form */
+    margin: auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+}
+
+h2 {
+    color: #333; /* Set header color */
+}
+
+.form-label {
+    font-weight: bold; /* Make labels bold */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none; /* Remove border */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Make it more responsive on smaller screens */
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+
+    .form-label {
+        font-size: 14px; /* Smaller font size for labels */
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 14px; /* Smaller font size for inputs */
+    }
+
+    .btn-primary {
+        width: 100%; /* Full width for buttons */
+    }
+}

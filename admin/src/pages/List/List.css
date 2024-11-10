@@ -1,0 +1,43 @@
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.table-responsive {
+    padding: 10px; 
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center; 
+} 
+
+
+@media (max-width: 768px) {
+    .table thead {
+        display: none; /* Hide the table header */
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table td {
+        text-align: left;
+        padding: 10px;
+        border: none;
+        position: relative;
+        padding-left: 50%; /* Adjust padding for label positioning */
+    }
+
+    /* Add a pseudo-element to each cell to label it */
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+    }
+}
