@@ -1,0 +1,73 @@
+.header {
+    height: 35vw !important;
+    background: url('../../assets/header_img.png') no-repeat center center !important;
+    border-radius: 20px !important;
+    background-size: cover !important;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 5% !important;
+    padding:20px 0 !important;
+}
+
+.header-overlay {
+    color: white !important;
+    animation: fadeIn 3s !important; /* Updated to fadeIn */
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Heading and Button Styling */
+.header-overlay h2 {
+    font-weight: 600 !important;
+    font-size: max(4vw, 22px) !important;
+    margin-bottom: 1rem !important;
+}
+
+.header-overlay p {
+    font-size: 1.2vw !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.header-overlay button {
+    font-size: 1.1vw !important;
+    padding: 1vw 2.5vw !important;
+    border-radius: 50px !important;
+    font-weight: 500 !important;
+}
+
+/* Responsiveness */
+@media (max-width: 1050px) {
+    .header {
+        height: 40vw !important;
+    }
+    .header-overlay {
+        max-width: 75% !important;
+    }
+}
+
+@media (max-width: 750px) {
+    .header-overlay {
+        max-width: 90% !important;
+        height: 50%;
+    }
+    .header{
+        margin-top: 34%!important;
+    }
+    .header-overlay p {
+        display: none !important; /* Hide text for better mobile display */
+    }
+    .header-overlay button {
+        font-size: 3vw !important;
+        padding: 2vw 4vw !important;
+    }
+}
